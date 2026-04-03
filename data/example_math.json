@@ -1,0 +1,62 @@
+[
+  {
+    "problem": "If 3x + 5 = 20, what is the value of x?",
+    "answer": "5",
+    "level": 1,
+    "type": "algebra"
+  },
+  {
+    "problem": "What is the sum of all even numbers from 2 to 100?",
+    "answer": "2550",
+    "level": 2,
+    "type": "number_theory"
+  },
+  {
+    "problem": "A rectangle has length 8 and width 5. What is its area?",
+    "answer": "40",
+    "level": 1,
+    "type": "geometry"
+  },
+  {
+    "problem": "Solve for y: 2y - 7 = 15",
+    "answer": "11",
+    "level": 1,
+    "type": "algebra"
+  },
+  {
+    "problem": "What is 15% of 80?",
+    "answer": "12",
+    "level": 1,
+    "type": "arithmetic"
+  },
+  {
+    "problem": "If a train travels at 60 mph for 2.5 hours, how far does it travel?",
+    "answer": "150",
+    "level": 2,
+    "type": "word_problem"
+  },
+  {
+    "problem": "Simplify: (x^2 + 3x + 2) / (x + 1)",
+    "answer": "x + 2",
+    "level": 3,
+    "type": "algebra"
+  },
+  {
+    "problem": "What is the next number in the sequence: 2, 4, 8, 16, ?",
+    "answer": "32",
+    "level": 2,
+    "type": "sequence"
+  },
+  {
+    "problem": "Calculate: 7! / 5!",
+    "answer": "42",
+    "level": 2,
+    "type": "combinatorics"
+  },
+  {
+    "problem": "If the probability of rain is 0.3, what is the probability it does NOT rain?",
+    "answer": "0.7",
+    "level": 2,
+    "type": "probability"
+  }
+]

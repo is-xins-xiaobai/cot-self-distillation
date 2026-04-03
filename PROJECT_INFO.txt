@@ -1,0 +1,72 @@
+╔════════════════════════════════════════════════════════════╗
+║   CoT Self-Distillation Framework for Math Reasoning      ║
+║   基于多样化CoT的自蒸馏框架（MATH500等数据集）              ║
+╚════════════════════════════════════════════════════════════╝
+
+📍 位置: ~/Projects/cot_self_distillation/
+
+📦 项目结构:
+├── cot_strategies.py          # 5种CoT策略定义
+├── data_generation.py          # CoT生成和质量评分
+├── model_wrapper.py            # 多后端模型支持
+├── generate_dataset.py         # 数据生成主脚本
+├── train.py                    # 模型训练脚本
+├── test_basic.py               # 基础测试（无依赖）
+├── test_generation.py          # 完整测试
+├── example_pipeline.sh         # 端到端Pipeline
+├── data/
+│   └── example_math.json       # 示例数据（10题）
+├── requirements.txt            # Python依赖
+├── README.md                   # 完整文档
+├── QUICKSTART.md              # 快速上手
+└── SUMMARY.md                 # 项目总结
+
+🎯 核心设计:
+  ✓ 固定4步外层结构（避免训推不一致）
+  ✓ 5种内层策略（保证多样性）
+  ✓ 答案验证 + 质量评分
+  ✓ 自我一致性推理
+
+🚀 快速开始:
+  1. 基础测试: python3 test_basic.py
+  2. 查看文档: cat QUICKSTART.md
+  3. 生成数据: python3 generate_dataset.py --help
+  4. 训练模型: python3 train.py --help
+
+📊 支持的模型后端:
+  • OpenAI (GPT-4, GPT-3.5-turbo)
+  • vLLM (本地部署)
+  • HuggingFace Transformers
+  • Together AI
+  • Mock (测试用)
+
+💡 关键特性:
+  ✅ 避免训推不一致 - 结构化设计
+  ✅ 高质量数据 - 多重过滤
+  ✅ 易于扩展 - 模块化代码
+  ✅ 实战验证 - 基于最新研究
+
+📚 文档:
+  • README.md - 完整使用文档
+  • QUICKSTART.md - 5分钟快速上手
+  • SUMMARY.md - 设计思路和总结
+
+🧪 测试状态:
+  ✓ 所有核心模块通过测试
+  ✓ Mock模型可用（无需API key）
+  ✓ 示例数据集准备就绪
+
+🎓 适用场景:
+  • MATH/GSM8K等数学推理数据集
+  • CoT能力自蒸馏
+  • 推理路径多样化训练
+  • 模型对齐和提升
+
+📞 获取帮助:
+  • 阅读文档: cat README.md
+  • 运行测试: python3 test_basic.py
+  • 查看示例: cat data/example_math.json
+
+创建时间: 2026-04-03
+作者: OpenClaw AI Assistant
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
