@@ -1,62 +1,72 @@
 [
   {
-    "problem": "If 3x + 5 = 20, what is the value of x?",
-    "answer": "5",
+    "problem": "A bakery sells cupcakes in boxes of 6. If Sarah orders 17 boxes for a party, how many cupcakes will she have in total?",
+    "answer": "102",
     "level": 1,
-    "type": "algebra"
+    "type": "arithmetic",
+    "source": "synthetic"
   },
   {
-    "problem": "What is the sum of all even numbers from 2 to 100?",
-    "answer": "2550",
+    "problem": "The sum of three consecutive even numbers is 54. What is the largest of these three numbers?",
+    "answer": "20",
     "level": 2,
-    "type": "number_theory"
+    "type": "algebra",
+    "source": "synthetic"
   },
   {
-    "problem": "A rectangle has length 8 and width 5. What is its area?",
-    "answer": "40",
+    "problem": "A square garden has a perimeter of 48 meters. What is the area of this garden in square meters?",
+    "answer": "144",
     "level": 1,
-    "type": "geometry"
+    "type": "geometry",
+    "source": "synthetic"
   },
   {
-    "problem": "Solve for y: 2y - 7 = 15",
-    "answer": "11",
-    "level": 1,
-    "type": "algebra"
-  },
-  {
-    "problem": "What is 15% of 80?",
-    "answer": "12",
-    "level": 1,
-    "type": "arithmetic"
-  },
-  {
-    "problem": "If a train travels at 60 mph for 2.5 hours, how far does it travel?",
-    "answer": "150",
+    "problem": "If 4 workers can complete a project in 12 days, how many days will it take for 6 workers to complete the same project, assuming they all work at the same rate?",
+    "answer": "8",
     "level": 2,
-    "type": "word_problem"
+    "type": "word_problem",
+    "source": "synthetic"
   },
   {
-    "problem": "Simplify: (x^2 + 3x + 2) / (x + 1)",
-    "answer": "x + 2",
+    "problem": "A water tank is 3/4 full. After using 60 liters of water, it becomes 1/2 full. What is the total capacity of the tank?",
+    "answer": "240",
     "level": 3,
-    "type": "algebra"
+    "type": "algebra",
+    "source": "synthetic"
   },
   {
-    "problem": "What is the next number in the sequence: 2, 4, 8, 16, ?",
-    "answer": "32",
+    "problem": "In a class of 30 students, 18 play basketball and 12 play soccer. If 5 students play both sports, how many students play neither basketball nor soccer?",
+    "answer": "5",
     "level": 2,
-    "type": "sequence"
+    "type": "set_theory",
+    "source": "synthetic"
   },
   {
-    "problem": "Calculate: 7! / 5!",
-    "answer": "42",
+    "problem": "A merchant buys goods for $800 and wants to make a 25% profit. At what price should the merchant sell the goods?",
+    "answer": "1000",
     "level": 2,
-    "type": "combinatorics"
+    "type": "percentage",
+    "source": "synthetic"
   },
   {
-    "problem": "If the probability of rain is 0.3, what is the probability it does NOT rain?",
-    "answer": "0.7",
+    "problem": "The ages of three siblings are consecutive integers. If the sum of their ages is 45, what is the age of the middle sibling?",
+    "answer": "15",
     "level": 2,
-    "type": "probability"
+    "type": "algebra",
+    "source": "synthetic"
+  },
+  {
+    "problem": "A sequence starts with 5 and each subsequent term is obtained by multiplying the previous term by 2 and subtracting 1. What is the 4th term of this sequence?",
+    "answer": "39",
+    "level": 3,
+    "type": "sequence",
+    "source": "synthetic"
+  },
+  {
+    "problem": "A rectangular pool is 20 meters long and 12 meters wide. If the pool is surrounded by a uniform path that is 2 meters wide, what is the total area occupied by the pool and the path?",
+    "answer": "384",
+    "level": 3,
+    "type": "geometry",
+    "source": "synthetic"
   }
 ]

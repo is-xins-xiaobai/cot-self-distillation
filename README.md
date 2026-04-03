@@ -307,3 +307,100 @@ MIT License
 ## 🙋 支持
 
 如有问题，请提Issue或联系作者。
+
+## 🎲 Synthetic Problem Generation
+
+This framework includes a **synthetic math problem generator** to create training data without relying on existing datasets like MATH500.
+
+### Why Synthetic Data?
+
+- ✅ **Avoid data contamination** - No overlap with evaluation benchmarks
+- ✅ **Unlimited data** - Generate as many problems as needed
+- ✅ **Controlled difficulty** - Adjust problem complexity
+- ✅ **Privacy-friendly** - No copyright concerns
+
+### Supported Problem Types
+
+1. **Arithmetic** - Multiplication, division, large additions
+2. **Algebra** - Linear equations, consecutive numbers, age problems
+3. **Geometry** - Squares, rectangles, circles (area/perimeter)
+4. **Word Problems** - Work rate, mixture, distance
+5. **Percentage** - Calculate percentages, price increases
+6. **Sequences** - Arithmetic, geometric, recursive
+7. **Set Theory** - Inclusion-exclusion problems
+
+### Generate Synthetic Dataset
+
+```python
+from synthetic_problem_generator import SyntheticMathGenerator
+
+# Create generator
+generator = SyntheticMathGenerator(seed=42)
+
+# Generate single problem
+problem = generator.generate_problem(problem_type="algebra")
+print(problem)
+# {
+#   "problem": "Solve for x: 5x + 3 = 28",
+#   "answer": "5",
+#   "level": 2,
+#   "type": "algebra",
+#   "source": "synthetic"
+# }
+
+# Generate dataset
+dataset = generator.generate_dataset(
+    n_problems=1000,
+    output_file="data/synthetic_1000.json"
+)
+```
+
+### Command Line Usage
+
+```bash
+# Generate 1000 synthetic problems
+python -c "
+from synthetic_problem_generator import SyntheticMathGenerator
+gen = SyntheticMathGenerator()
+gen.generate_dataset(1000, 'data/synthetic_1000.json')
+"
+```
+
+### Use Synthetic Data in Pipeline
+
+```bash
+# 1. Generate synthetic problems
+python -c "from synthetic_problem_generator import SyntheticMathGenerator; \
+           SyntheticMathGenerator().generate_dataset(500, 'data/synthetic_500.json')"
+
+# 2. Generate CoT data
+python generate_dataset.py \
+  --input data/synthetic_500.json \
+  --output data/cot_synthetic.json \
+  --backend openai \
+  --model gpt-4 \
+  --samples-per-problem 5
+
+# 3. Train model
+python train.py \
+  --model meta-llama/Llama-2-7b-hf \
+  --train-data data/cot_synthetic.json \
+  --output-dir checkpoints/synthetic-model \
+  --epochs 3
+```
+
+### Example Problems
+
+The `data/example_math.json` contains **10 synthetic problems** (not from MATH500):
+
+```json
+{
+  "problem": "A bakery sells cupcakes in boxes of 6. If Sarah orders 17 boxes...",
+  "answer": "102",
+  "type": "arithmetic",
+  "source": "synthetic"
+}
+```
+
+All example problems are **synthetically generated** to avoid any overlap with standard benchmarks.
+

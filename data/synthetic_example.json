@@ -1,0 +1,72 @@
+[
+  {
+    "problem": "A sequence starts with 5, 8, and each term is the sum of the previous two terms. What is the 5th term?",
+    "answer": "34",
+    "level": 3,
+    "type": "sequence",
+    "source": "synthetic"
+  },
+  {
+    "problem": "A car travels at 57 km/h for 2 hours. What is the total distance traveled?",
+    "answer": "114",
+    "level": 1,
+    "type": "word_problem",
+    "source": "synthetic"
+  },
+  {
+    "problem": "In a group of 55 people, 23 like coffee and 31 like tea. If 7 people like both drinks, how many people like neither coffee nor tea?",
+    "answer": "8",
+    "level": 2,
+    "type": "set_theory",
+    "source": "synthetic"
+  },
+  {
+    "problem": "A square has a perimeter of 56 meters. What is the length of one side?",
+    "answer": "14",
+    "level": 1,
+    "type": "geometry",
+    "source": "synthetic"
+  },
+  {
+    "problem": "A square has sides of length 10 cm. What is its area in square centimeters?",
+    "answer": "100",
+    "level": 1,
+    "type": "geometry",
+    "source": "synthetic"
+  },
+  {
+    "problem": "A rectangular field is 29 meters long and 9 meters wide. What is its area?",
+    "answer": "261",
+    "level": 1,
+    "type": "geometry",
+    "source": "synthetic"
+  },
+  {
+    "problem": "In a group of 31 people, 17 like coffee and 18 like tea. If 2 people like both drinks, how many people like neither coffee nor tea?",
+    "answer": "-2",
+    "level": 2,
+    "type": "set_theory",
+    "source": "synthetic"
+  },
+  {
+    "problem": "If 7 workers can complete a task in 12 days, how many days will it take 12 workers to complete the same task?",
+    "answer": "7",
+    "level": 2,
+    "type": "word_problem",
+    "source": "synthetic"
+  },
+  {
+    "problem": "In a group of 41 people, 22 like coffee and 16 like tea. If 7 people like both drinks, how many people like neither coffee nor tea?",
+    "answer": "10",
+    "level": 2,
+    "type": "set_theory",
+    "source": "synthetic"
+  },
+  {
+    "problem": "A shop sells items in packs of 12. If a customer orders 28 packs, how many items will they receive in total?",
+    "answer": "336",
+    "level": 1,
+    "type": "arithmetic",
+    "source": "synthetic"
+  }
+]
