@@ -1,5 +1,19 @@
 # CoT Self-Distillation for Math Reasoning
 
+[![Tests](https://github.com/is-xins-xiaobai/cot-self-distillation/actions/workflows/test.yml/badge.svg)](https://github.com/is-xins-xiaobai/cot-self-distillation/actions/workflows/test.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+
+基于多样化CoT的自蒸馏框架，用于提升数学推理能力。
+
+![CoT Self-Distillation](https://img.shields.io/badge/CoT-Self--Distillation-brightgreen)
+![Dataset](https://img.shields.io/badge/Dataset-MATH%20%7C%20GSM8K-orange)
+![Backend](https://img.shields.io/badge/Backend-OpenAI%20%7C%20vLLM%20%7C%20HF-blue)
+
+---
+
+
 基于多样化CoT的自蒸馏框架，用于提升数学推理能力。
 
 ## 🎯 核心思想
